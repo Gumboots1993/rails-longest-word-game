@@ -1,0 +1,50 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,900;1,300&display=swap');
+
+body {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  margin: auto;
+  width: 700px;
+}
+
+.cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px ;
+  background-color: rgb(124, 124, 248);
+  color: white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 50px;
+  margin: 0 5px;
+  width: 30px
+}
+
+h1 {
+  color: rgb(124, 124, 248);
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  color: rgb(2, 2, 27);
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+}
+
+p {
+  color: rgb(29, 29, 100);
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}

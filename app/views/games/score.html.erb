@@ -1,0 +1,13 @@
+<h1> Result </h1>
+<h2><%= @message1 %></h2>
+<h2><%= @message2 %></h2>
+
+<div class ="main-container">
+  <% @letters.each do |letter| %>
+  <div class ="cards">
+    <%= letter %>
+  </div>
+  <% end %>
+</div>
+<br>
+<%= link_to "Play again", new_path %>
