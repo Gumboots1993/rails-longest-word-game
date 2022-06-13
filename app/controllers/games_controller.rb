@@ -1,14 +1,15 @@
+require "json"
+require "open-uri"
+
 class GamesController < ApplicationController
 
   def new
     @letters = Array.new(10) { ('A'...'Z').to_a.sample }
-    @answer = params[:score]
   end
 
   def score
-    new
-    require "json"
-    require "open-uri"
+    @letters = params[:letters].split(" ")
+    @answer = params[:score]
     url = "https://wagon-dictionary.herokuapp.com/#{params[:score]}"
     open_url = URI.open(url).read
     @parsed_data = JSON.parse(open_url)
@@ -24,4 +25,8 @@ class GamesController < ApplicationController
       end
     end
   end
+
+  # def letters_array
+  #   @letters = Array.new(10) { ('A'...'Z').to_a.sample }
+  # end
 end
